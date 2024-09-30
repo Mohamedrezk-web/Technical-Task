@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --input-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --btn-primary-bg: #007bff;
+  --btn-secondary-bg: #6c757d;
+}
+
+.dark-mode {
+  --bg-color: #2c2c2c;
+  --text-color: #f8f9fa;
+  --input-bg: #444444;
+  --card-bg: #333333;
+  --btn-primary-bg: #1f6fdb;
+  --btn-secondary-bg: #4b4b4b;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fancy-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.fancy-input {
+  border-radius: 10px;
+  border: 2px solid #e1e1e1;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fancy-input:focus {
+  border-color: var(--btn-primary-bg);
+  box-shadow: 0 0 10px rgba(31, 111, 219, 0.2);
+}
+
+.fancy-dropdown {
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: var(--btn-secondary-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fancy-btn {
+  width: 150px;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  background-color: var(--btn-primary-bg);
+  color: #ffffff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.fancy-btn:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.form-check-label a {
+  color: var(--btn-primary-bg);
+}
+
+.form-check-label a:hover {
+  text-decoration: underline;
+}
